@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <html lang="en" className={"max-w-[1000px] mx-auto"}>
+
+      <body className={inter.className + "w-full flex flex-col justify-start"}>
+      <h1 className={"text-black w-fit flex flex-col items-start"}>Nav</h1>
+      {children}</body>
     </html>
   );
 }
