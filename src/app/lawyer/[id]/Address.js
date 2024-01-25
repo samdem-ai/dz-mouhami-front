@@ -1,4 +1,6 @@
-import LocationIcon from "../../assets/location.svg";
+'use client'
+import Image from "next/image";
+import LocationIcon from "../../../assets/location.svg";
 import {
   MapContainer,
   TileLayer,
@@ -20,11 +22,11 @@ const Address = () => {
   return (
     <>
       <div className="flex items-center gap-1">
-        <img src={LocationIcon} alt="Locationon" className="w-4" />
+        <Image src={LocationIcon} alt="Locationon" className="w-4" />
         <div className="font-medium text-[#0f3146]">Address</div>
       </div>
       <div className="text-sm  text-[#26495d]  ms-1">
-        Rue Djouambi Mbarek, Rouached
+        Rue Jean richepin, Alger
       </div>
       <div className="w-full h-[300px] mt-3">
         <MapContainer

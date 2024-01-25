@@ -1,7 +1,9 @@
+'use client'
 import React from "react";
 import Logo from "../assets/logo.svg";
 import SvgColor from "react-svg-color";
-import { Link } from "react-router-dom";
+import Link from 'next/link'
+
 
 const Footer = () => {
   return (
@@ -20,22 +22,22 @@ const Footer = () => {
         <div className="w-full text-sm sm:w-1/3 lg:w-1/4 mt-4 sm:mt-0 pt-0 sm:pt-8">
           <ul className="flex flex-col md:flex-row justify-between px-2 gap-2">
             <li className="mb-2">
-              <Link to="/contact" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 Contact
               </Link>
             </li>
             <li className="mb-2">
-              <Link to="/about" className="hover:underline">
+              <Link href="/about" className="hover:underline">
                 About
               </Link>
             </li>
             <li className="mb-2">
-              <Link to="/privacy" className="hover:underline">
+              <Link href="/privacy" className="hover:underline">
                 Privacy
               </Link>
             </li>
             <li className="mb-2">
-              <Link to="/terms" className="hover:underline">
+              <Link href="/terms" className="hover:underline">
                 Terms
               </Link>
             </li>

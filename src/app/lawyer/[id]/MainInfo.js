@@ -1,12 +1,13 @@
-import lawyerImage from "../../assets/lawyer_placeholder.png";
-import LocationIcon from "../../assets/location.svg";
-import categoryIcon from "../../assets/category.svg";
-import Availability from "../../components/Availability";
+'use client'
+
+import lawyerImage from "../../../assets/lawyer_placeholder.png";
+import Availability from "../../../components/Availability";
+import Image from "next/image";
 
 const MainInfo = () => {
   const name = "Lawyer Name";
   const categories = ["Category 1", "Category 2", "Category 3"];
-  const location = "Location";
+  const location = "Location"
   const description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget fermentum aliquam, sem diam aliquet mauris, nec";
 
@@ -14,8 +15,9 @@ const MainInfo = () => {
     <>
       <div className="flex flex-col md:flex-row items-center justify-center md:items-start md:justify-start mb-10">
         {/* Image on the left */}
-        <img
+        <Image
           src={lawyerImage}
+          height={280}
           className="w-64 h-[280px] rounded-md mr-4 object-cover"
         />
 

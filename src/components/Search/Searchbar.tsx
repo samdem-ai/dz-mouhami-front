@@ -18,7 +18,7 @@ export default function SearchBar(){
                     placeholder="enter the wilaya"
                     type="text"
                 />
-                {/*TODO ADD search functionnality function usign api    */}
+                {/*TODO ADD search functionnality function usign api */}
                 <Button className="rounded-md bg-[#001F3F] px-4 py-2 text-white ml-2 hover:bg-[#1e3a8a]">
                     <Search className="text-white"/>
                 </Button>

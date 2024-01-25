@@ -1,3 +1,5 @@
+'use client'
+
 import Footer from "../../../components/Footer";
 import Navbar from "../../../components/Navbar";
 import MainInfo from "./MainInfo";
@@ -9,7 +11,6 @@ const LawyerPage = () => {
     return (
         <div className="flex flex-col justify-center items-center">
         <div className="w-full">
-            <Navbar />
             </div>
             <div className="flex flex-col md:flex-row justify-center items-start min-h-screen max-w-[70rem] mx-2 md:mx-6 mb-12 mt-6 gap-6 ">
         {/* main (2/3) */}
@@ -36,9 +37,6 @@ const LawyerPage = () => {
         <Address />
         </div>
         </div>
-        </div>
-        <div className="w-full">
-        <Footer />
         </div>
         </div>
 );

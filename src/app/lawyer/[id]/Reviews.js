@@ -1,7 +1,8 @@
-import ReviewsIcon from "../../assets/reviews.svg";
-import LeaveReviewDialog from "../../components/LeaveReviewDialog";
-import ReviewCard from "../../components/ReviewCard";
-
+'use client'
+import ReviewsIcon from "../../../assets/reviews.svg";
+import LeaveReviewDialog from "../../../components/LeaveReviewDialog";
+import ReviewCard from "../../../components/ReviewCard";
+import Image from "next/image";
 const Reviews = () => {
   // imageUrl, fullName, date, rating, reviewContent;
   const reviews = Array(5)
@@ -19,7 +20,7 @@ const Reviews = () => {
     <>
       <div className="flex flex-row justify-between items-center border-b border-[#e4e4e4] pb-4 mb-4">
         <div className="flex items-center gap-2">
-          <img src={ReviewsIcon} alt="Locationon" className="w-5" />
+          <Image src={ReviewsIcon.src} width={20} height={20} alt="Locationon" className="w-5" />
           <div className="font-medium text-lg text-[#0f3146]">Reviews</div>
         </div>
         <LeaveReviewDialog

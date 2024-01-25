@@ -8,7 +8,7 @@ export default function ProfileCard(props: {user:propsProfileType}){
 
 
     return (
-        <div className="card">
+        <div className="card mt-3">
             <div className="banner">
                 <svg className={"profile-image"} viewBox="0 0 100 100">
                     <path d="m38.977 59.074c0 2.75-4.125 2.75-4.125 0s4.125-2.75 4.125 0"></path>

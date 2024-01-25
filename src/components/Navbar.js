@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from "react";
 import Logo from "../assets/logo.svg";
 import info from "../assets/info.svg";
@@ -5,7 +6,7 @@ import contact from "../assets/email.svg";
 import Profil from "../assets/profile.svg";
 import Search from "../assets/search.svg";
 import "../style/styles.css";
-import { Link } from "react-router-dom";
+import Link from 'next/link'
 import { useState } from "react";
 const Navbar = () => {
   // get current url, if it's /home, show the get started button
@@ -112,28 +113,28 @@ function LinksWrapper({ className }) {
   return (
     <div className={className}>
       <Link
-        to="/about"
+        href="/about"
         className="nav-Links  flex items-center gap-1 text-[#26495D]"
       >
         <img src={info}></img>
         About
       </Link>
       <Link
-        to="/contact"
+        href="/contact"
         className="nav-Links  flex items-center gap-1 text-[#26495D]"
       >
         <img src={contact}></img>
         Contact
       </Link>
       <Link
-        to="/search"
+        href="/search"
         className=" nav-Links flex items-center gap-1 text-[#26495D]"
       >
         <img src={Search}></img>
         Search
       </Link>
       <Link
-        to="/user-edit"
+        href="/user-edit"
         className="nav-Links flex items-center gap-1 text-[#26495D]"
       >
         <img src={Profil}></img>
@@ -145,7 +146,7 @@ function LinksWrapper({ className }) {
 
 function LogoComponent() {
   return (
-    <Link to="/">
+    <Link href="/">
       <img
         src={Logo}
         alt="Mouhami-dz"
