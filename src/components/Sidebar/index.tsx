@@ -3,7 +3,7 @@
 import React from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { GitHubLogoIcon } from "@radix-ui/react-icons"
+
 import {
   Container,
   FormInput,
@@ -44,60 +44,16 @@ const menu: SidebarNavItem[] = [
     title: "Dashboard",
     items: [
       {
-        title: "Home",
-        href: "/dashboard",
+        title: "Lawyers",
+        href: "/dashboard/lawyers",
         icon: <Home size={16} />,
       },
       {
-        title: "Form",
-        href: "/dashboard/form",
-        icon: <GanttChartSquare size={16} />,
+        title: "users",
+        href: "/dashboard/users",
+        icon: <Home size={16} />,
       },
-      {
-        title: "Table",
-        href: "/dashboard/table",
-        icon: <Table size={16} />,
-      },
-      {
-        title: "Charts",
-        href: "/dashboard/analytics",
-        icon: <LineChart size={16} />,
-      },
-      {
-        title: "Bill",
-        href: "/dashboard/list",
-        icon: <Receipt size={16} />,
-      },
-    ],
-  },
-  {
-    title: "Components",
-    items: [
-      {
-        title: "Inputs",
-        href: "/dashboard/inputs",
-        icon: <FormInput size={16} />,
-      },
-      {
-        title: "Feedback",
-        href: "/dashboard/feedback",
-        icon: <MessageSquarePlus size={16} />,
-      },
-      {
-        title: "Display",
-        href: "/dashboard/display",
-        icon: <Container size={16} />,
-      },
-      {
-        title: "Navigaion",
-        href: "/dashboard/navigation",
-        icon: <Navigation size={16} />,
-      },
-      {
-        title: "Surfaces",
-        href: "/dashboard/surfaces",
-        icon: <Layers3 size={16} />,
-      },
+
     ],
   },
 ]
@@ -108,7 +64,7 @@ export default function Sidebar({ className, onClick }: SidebarProps) {
   return (
     <div className={cn("flex h-full w-[240px] flex-col", className)}>
       <div className='flex h-16 w-full items-center justify-center gap-2 border-b text-lg font-medium'>
-        <GitHubLogoIcon className='h-9 w-9' /> Hello-Admin
+        Hello Dz-Mouhami Admin
       </div>
       <div className='py-4'>
         {menu.map((item, index) => (

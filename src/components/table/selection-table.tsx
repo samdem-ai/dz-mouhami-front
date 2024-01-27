@@ -10,8 +10,8 @@ import {
   useReactTable,
 } from "@tanstack/react-table"
 
-import { Button } from "../../../../projects/next-admin/components/ui/button"
-import { Checkbox } from "../../../../projects/next-admin/components/ui/checkbox"
+import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,7 +19,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../../../projects/next-admin/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu"
 import {
   Table,
   TableBody,
@@ -27,7 +27,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../../../projects/next-admin/components/ui/table"
+} from "@/components/ui/table"
 
 import { data, Payment } from "./data"
 import DataTablePagination from "./DataTablePagination"

@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../../../../projects/next-admin/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 import ComplexTable from "./complex-table"
 import PaginationTable from "./pagination-table"

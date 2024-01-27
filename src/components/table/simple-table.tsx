@@ -8,7 +8,7 @@ import {
 } from "@tanstack/react-table"
 import { MoreHorizontal } from "lucide-react"
 
-import { Button } from "../../../../projects/next-admin/components/ui/button"
+import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,7 +16,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../../../projects/next-admin/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu"
 import {
   Table,
   TableBody,
@@ -25,7 +25,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../../../../projects/next-admin/components/ui/table"
+} from "@/components/ui/table"
 
 import { data, Payment } from "./data"
 
